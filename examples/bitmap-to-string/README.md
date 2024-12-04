@@ -1,0 +1,5 @@
+***Based on <https://ironsoftware.com/examples/bitmap-to-string/>***
+
+IronDrawing includes a functionality that permits the transformation of `AnyBitmap` files into distinct character strings that accurately represent the `AnyBitmap` based on its attributes. This method ensures that even minor modifications to an `AnyBitmap` file result in a different string output, while `AnyBitmap` files that are alike will yield similar strings. This is especially handy for similarity checks through comparative analysis of the strings generated from two `AnyBitmap` files.
+
+To utilize this capability, one should first load an `AnyBitmap` from its file path, then convert this file into a **string** that captures the essence of the `AnyBitmap`. This is achieved by employing the `.ToString()` method to convert the file to a string representation.

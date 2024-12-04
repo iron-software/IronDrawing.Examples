@@ -1,0 +1,5 @@
+***Based on <https://ironsoftware.com/examples/clone-anybitmap/>***
+
+IronDrawing includes a useful feature called Clone AnyBitmap, which allows users to duplicate an `AnyBitmap` file precisely. This functionality facilitates the creation of an identical replica of an `AnyBitmap` file and enables its storage without modifying the original file. Furthermore, the CropRectangle feature enhances flexibility by letting users select and copy specific sections of the file to retain the integrity of the original.
+
+To replicate an `AnyBitmap` file, start by loading the desired `AnyBitmap` file. You can then employ the `.Clone()` method on this file and save the result. For utilizing the `CropRectangle` feature, integrate the `CropRectangle` method directly within the cloning process like so: `.Clone(new CropRectangle(X, Y, Width, Height))`. Remember, the dimensions specified in `CropRectangle` are in pixels (px). This approach ensures that only the designated portion of the file is copied, while the original remains unaffected.

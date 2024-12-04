@@ -1,0 +1,9 @@
+***Based on <https://ironsoftware.com/examples/point-pointf/>***
+
+IronSoftware has recently expanded its library with the addition of two classes: `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF`. These new classes provide functionality for managing points in a 2D space by storing an ordered pair of double x and double y coordinates. This feature is also available in other well-known graphics libraries, such as `System.Drawing`, `SixLabors.ImageSharp`, `SkiaSharp`, and `Microsoft.Maui.Graphics`. The primary distinction between the `Point` and `PointF` classes is the data type they accept for coordinates: `Point` uses `System.Double`, whereas `PointF` utilizes `System.Single`.
+
+Creating instances of the `Point` or `PointF` classes is quite simple and requires setting the X and Y properties, which represent the point's coordinates.
+
+In the previously mentioned examples, the `Point` class uses `System.Double` values for both the x and y coordinates, offering precise, 64-bit double precision float point data types. Conversely, the `PointF` class uses `System.Single` values or float types for the coordinates, which are 32-bit single precision float points with less accuracy and smaller range.
+
+Both the `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF` classes have identical methods and functionalities. However, the `System.Double` used in `Point` is generally recommended over `PointF` due to its greater accuracy and capacity for handling larger decimal values. Therefore, for applications requiring high precision, the `IronSoftware.Drawing.Point` is the preferred choice.

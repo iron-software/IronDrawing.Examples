@@ -1,0 +1,5 @@
+***Based on <https://ironsoftware.com/examples/get-color-depth/>***
+
+Color depth, also referred to as bits per pixel (bpp), is a metric that determines the finesse with which color components are represented in an image. Specifically, it may refer to the bits allocated for one pixel or how many bits are used for each color component within that pixel. The color depth is a key indicator of an image’s potential fidelity and richness; generally, a higher bpp correlates with greater definition and clarity in the image.
+
+To load an image file and assess its color depth in .NET, you would begin by loading the image into an `AnyBitmap` object from a specified file path using the `AnyBitmap.FromFile(@"FILE_PATH")` method. After loading, you can retrieve the bpp value by accessing the `.BitsPerPixel` property of the `AnyBitmap` instance. This property provides the necessary details about the image's color depth.
