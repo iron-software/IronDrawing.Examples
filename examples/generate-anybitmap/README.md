@@ -1,19 +1,19 @@
 ***Based on <https://ironsoftware.com/examples/generate-anybitmap/>***
 
-To effectively utilize the IronDrawing tool to open, read, and manipulate image files, it's essential to create `AnyBitmap` type files. There are several approaches to load image files and produce `AnyBitmap` files.
+To utilize the IronDrawing tool for opening, reading, and manipulating image files, it's essential to create `AnyBitmap` files first. There are several techniques to load images and produce `AnyBitmap` files.
 
-## File Path
+## File path
 
-You can load image files directly from your local machine by using the `AnyBitmap.FromFile(@"FILE_PATH")` method. This will generate an `AnyBitmap` file which you then store in an `AnyBitmap` variable.
+To load image files from your local system, you can use the `AnyBitmap.FromFile(@"FILE_PATH")` method. This reads the image file specified at the `FILE_PATH` and converts it into an `AnyBitmap` object.
 
-## Memory Stream
+## Memory stream
 
-Alternatively, `AnyBitmap` files can be created from a memory stream. To do this, first read the image bytes into a byte array with the `File.ReadAllBytes(@"FILE_PATH")` method. Then, use the `AnyBitmap.FromBytes(byte [])` method to generate and store the `AnyBitmap` file in an `AnyBitmap` variable.
+Alternatively, it's possible to create an `AnyBitmap` from a memory stream. First, the image's bytes are extracted and stored in a byte array with the `File.ReadAllBytes(@"FILE_PATH")` method. Then, these bytes are used to create an `AnyBitmap` using the `AnyBitmap.FromBytes(byte[])` method, which loads the array of bytes into an `AnyBitmap` variable.
 
-## SVG File
+## SVG file
 
-`AnyBitmap` files can also be derived from SVG files using a similar path as file path loading. Nonetheless, loading an SVG file requires additional dependencies such as `SkiaSharp` and `SkiaSharp.Svg`.
+`AnyBitmap` files can also be created from SVG files using a similar path method as with regular image files. However, loading SVG files requires additional libraries such as `SkiaSharp` and `SkiaSharp.Svg` to handle the SVG data format.
 
 ## Uniform Resource Identifier (URI)
 
-IronDrawing allows for direct `AnyBitmap` file creation from a URI as well. To do this, instantiate a URI variable (`Uri uri = new Uri("URI_PATH");`), and then use the `AnyBitmap.FromUri(uri)` method to produce the `AnyBitmap` file and store it to an `AnyBitmap` type variable.
+The IronDrawing tool is capable of generating `AnyBitmap` files directly from a URI. This involves creating a `Uri` object with `Uri uri = new Uri("URI_PATH");`, and then passing this URI to the `AnyBitmap.FromUri(uri)` method, which creates an `AnyBitmap` file from the content pointed to by the URI.

@@ -1,5 +1,5 @@
 ***Based on <https://ironsoftware.com/examples/get-number-of-frames-in-anybitmap/>***
 
-This functionality allows users to easily determine the number of frames contained within multipage GIF or TIFF files.
+This functionality allows users to effortlessly determine the number of frames contained in a multipage GIF or TIFF file.
 
-To achieve this, the file in question can be converted into an `AnyBitmap` object using its file path. Then, you can store the number of frames in a variable by using the `AnyBitmap.FromFile(@"FILE_PATH").FrameCount` method.
+Convert the target multipage file into an `AnyBitmap` type using the file's path. You can then store the frame count in a variable by utilizing the `AnyBitmap.FromFile(@"FILE_PATH").FrameCount` method.

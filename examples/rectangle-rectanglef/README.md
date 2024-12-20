@@ -1,5 +1,5 @@
 ***Based on <https://ironsoftware.com/examples/rectangle-rectanglef/>***
 
-IronDrawing offers two classes, `IronSoftware.Drawing.Rectangle` and `IronSoftware.Drawing.RectangleF`, designed for creating rectangles at specific coordinates on a page. These classes utilize four parameters to delineate the rectangle's position and dimensions.
+IronDrawing introduces two classes designed to facilitate the drawing of rectangles at specified coordinates: `IronSoftware.Drawing.Rectangle` and `IronSoftware.Drawing.RectangleF`. These classes utilize a quartet of parameters that depict the location and dimensions of the rectangle.
 
-The classes accept parameters for `x` and `y` coordinates, representing the top-left corner of the rectangle. The `Rectangle` class requires these coordinates as integers, while the `RectangleF` class uses floats. The subsequent parameters specify the `width` and `height` of the rectangle, using the same data types as their respective coordinate parameters. Both classes default to using pixels as the unit of measurement.
+Each class requires `x` and `y` coordinates as initial parameters, which represent the top-left corner of the drawing canvas. For the `Rectangle` class, these coordinates are integer values, whereas the `RectangleF` accepts floating-point numbers for more precise placement. The subsequent parameters define the `width` and `height` of the rectangle, with data types consistent with those used for the `x` and `y` coordinates. By default, the dimensions for both classes are measured in pixels.

@@ -1,5 +1,14 @@
 ***Based on <https://ironsoftware.com/examples/bitmap-to-string/>***
 
-IronDrawing includes a functionality that permits the transformation of `AnyBitmap` files into distinct character strings that accurately represent the `AnyBitmap` based on its attributes. This method ensures that even minor modifications to an `AnyBitmap` file result in a different string output, while `AnyBitmap` files that are alike will yield similar strings. This is especially handy for similarity checks through comparative analysis of the strings generated from two `AnyBitmap` files.
+IronDrawing offers a capability to transform `AnyBitmap` files into distinct strings that represent their properties. This function constructs a unique string for each `AnyBitmap` based on its characteristics. Minor alterations to an `AnyBitmap` file will result in a different string, while similar `AnyBitmap` files will generate similar strings. This functionality is especially helpful for comparing the similarity between two `AnyBitmap` images by examining their string representations.
 
-To utilize this capability, one should first load an `AnyBitmap` from its file path, then convert this file into a **string** that captures the essence of the `AnyBitmap`. This is achieved by employing the `.ToString()` method to convert the file to a string representation.
+To leverage this feature, you simply need to load an `AnyBitmap` file from a specified path and then use the `.ToString()` method to convert this `AnyBitmap` into a string. This string can then be assigned to a variable of type **string** for further use or comparison. Here's how you can do it:
+```csharp
+// Load the AnyBitmap file
+AnyBitmap bitmap = AnyBitmap.Load("path-to-your-file");
+
+// Convert the AnyBitmap to a string
+string bitmapString = bitmap.ToString();
+
+// Now you can use bitmapString for comparison or other purposes
+```

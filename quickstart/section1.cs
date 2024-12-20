@@ -1,10 +1,10 @@
 using IronSoftware.Drawing;
 using IronSoftware.System.Drawing;
-namespace irondrawing.Quickstart
+namespace IronDrawing.Examples.Overview.Quickstart
 {
-    public class Section1
+    public static class Section1
     {
-        public void Run()
+        public static void Run()
         {
             ​
             // Create a new AnyBitmap object

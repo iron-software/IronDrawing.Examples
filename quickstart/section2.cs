@@ -1,10 +1,10 @@
 using IronSoftware.Drawing;
 using IronSoftware.System.Drawing;
-namespace irondrawing.Quickstart
+namespace IronDrawing.Examples.Overview.Quickstart
 {
-    public class Section2
+    public static class Section2
     {
-        public void Run()
+        public static void Run()
         {
             ​
             // Create a new Color object

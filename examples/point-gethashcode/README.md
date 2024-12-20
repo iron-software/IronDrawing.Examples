@@ -1,9 +1,9 @@
 ***Based on <https://ironsoftware.com/examples/point-gethashcode/>***
 
-In the `Point` and `PointF` classes provided by IronDrawing, there is a useful method named `GetHashCode()`. This method assigns a numerical code that uniquely identifies an object, helping facilitate operations like object comparison in data structures such as hash sets, dictionaries, and tables.
+The `Point` and `PointF` classes from IronDrawing also feature the `GetHashCode()` method. This method generates a unique numerical hash code that represents the essence of the object, such as a point in this instance. Hash codes are instrumental in optimizing searches and storage within data structures like dictionaries, hash sets, and hash tables by simplifying object equality checks and hashing operations.
 
-To retrieve the hash code for a `Point` or `PointF`, simply invoke the `GetHashCode()` method on the object instance. This method returns a `System.Int32` object that you can either display or save for future use.
+To retrieve a hash code for a Point, invoke the `GetHashCode()` on a `Point` or `PointF` instance. This function outputs a `System.Int32` value, which you can either display or store as needed.
 
-Below is a demo where a `PointF` instance is created with specified coordinates. Following instantiation, `GetHashCode()` is called on this object, and the resulting hash code is captured in a variable. If desired, the hash code can then be printed to the console for verification.
+In the provided example, after initiating a `PointF` object with specific float values for coordinates, the `GetHashCode()` method is applied to this object. The generated hash code is then assigned to a variable and may be printed to the console for verification.
 
-Both `GetHashCode()` and `Equals()` methods are integral for comparing two points, with `GetHashCode()` generating a unique identifier for a point and `Equals()` comparing the actual values. While `Equals()` gives a direct comparison result, `GetHashCode()` is generally used for generating a hash code usable in various collection frameworks, including dictionaries and hash tables.
+While both `GetHashCode()` and `Equals()` methods facilitate the comparison of two points, `Equals()` directly compares the objects. The `GetHashCode()`, on the other hand, is chiefly utilized for extracting a point's hash code for usage within the program or incorporation into a dictionary or hash tables.

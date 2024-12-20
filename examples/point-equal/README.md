@@ -1,7 +1,7 @@
 ***Based on <https://ironsoftware.com/examples/point-equal/>***
 
-One feature of the `Point` and `PointF` classes is the `Equals()` method. This function compares the x and y coordinates of two points and returns a boolean indicating whether they are equal.
+The `Point` and `PointF` classes each include an `Equals()` method for comparing two points based on their x and y coordinates, returning a boolean result to indicate equality.
 
-In the given code example, the `Equals()` method is utilized to compare two distinct points. As a member of the `Point` class, this method is accessed using a `Point` object and requires another `Point` object as the parameter for comparison. It specifically checks for equality in the x and y coordinates of the two points in question.
+In the provided example, the `Equals()` method is utilized to assess whether two points are identical. This method must be invoked on an instance of the `Point` class, and it requires another `Point` instance as an argument for comparison. This function strictly evaluates the x and y coordinates between two points to determine equality.
 
-It is crucial to remember that the `Equals()` method is only applicable to `Point` objects within the same class. Trying to employ this method to contrast points from different classes, such as `Point` and `PointF`, will lead to a `NullReferenceException` during execution.
+It's crucial to understand that the `Equals()` method should only be employed with objects that are instances of the same class. Trying to compare objects from the `Point` class to those from the `PointF` class using this method will trigger a `NullReferenceException` at runtime, as these are considered objects of different classes.

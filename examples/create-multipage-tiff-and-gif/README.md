@@ -1,11 +1,5 @@
 ***Based on <https://ironsoftware.com/examples/create-multipage-tiff-and-gif/>***
 
-IronDrawing allows users to merge `AnyBitmap` files into multipage TIFF or GIF files, offering flexibility to use various frame dimensions for creating these files.
+IronDrawing allows users to merge `AnyBitmap` files into a multipage TIFF or GIF file, giving flexibility in the frame dimensions used to assemble the multipage GIF and TIFF files.
 
-Here's how you can utilize this capability:
-
-1. First, load each `AnyBitmap` frame by specifying the file path, and store them in a List initialized for `AnyBitmap` types. 
-2. To generate a TIFF file, use the method `.CreateMultiFrameTiff(List<AnyBitmap>)`.
-3. Alternatively, to produce a GIF file, apply the method `.CreateMultiFrameGif(List<AnyBitmap>)`.
-
-This feature enables efficient handling and transformation of image files in your applications, making it easier to manage complex graphics tasks.
+To leverage this feature, you must load the `AnyBitmap` frames using their respective file paths, and then store these into an initialized `List` of `AnyBitmap`. Once your frames are ready, you can compile them into a TIFF file using the `.CreateMultiFrameTiff(List<AnyBitmap>)` method. Alternatively, you can generate a GIF file using the `.CreateMultiFrameGif(List<AnyBitmap>)` method.

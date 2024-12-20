@@ -1,7 +1,22 @@
 ***Based on <https://ironsoftware.com/examples/anybitmap-set-pixel/>***
 
-The `SetPixel()` function found within the `AnyBitmap` class of the `IronSoftware.Drawing` namespace allows you to modify individual pixels on an image by specifying their color. This functionality is particularly useful for drawing purposes, including the creation of lines on images with chosen colors.
+The `SetPixel()` function in the `AnyBitmap` class enables users to customize individual pixels of an image by assigning specific colors to them. This functionality is particularly beneficial for tasks such as drawing lines or adding color enhancements to images.
 
-Located within the `AnyBitmap` class in `IronSoftware.Drawing`, the `SetPixel()` accepts three arguments: the x-axis coordinate, the y-axis coordinate, and a color represented by an `IronSoftware.Drawing.Color` instance. To change the color of a pixel in an image, this method should be invoked on an existing `AnyBitmap` object.
+Located within the `AnyBitmap` class of the `IronSoftware.Drawing` namespace, the `SetPixel()` method requires three arguments: the x-coordinate, the y-coordinate, and a color object described by `IronSoftware.Drawing.Color`. To use this method, one must invoke it on an instance of `AnyBitmap`, targeting the desired pixel within the image associated with that `AnyBitmap` instance.
 
-The following code example demonstrates using the `AnyBitmap.FromFile()` method to load an image into an `AnyBitmap` object. A for-loop is then utilized to draw a horizontal colored line by altering the x coordinate. Finally, the altered bitmap is saved under a new filename on the local system.
+Consider the following example where the `AnyBitmap.FromFile()` method is used to load an image into a `AnyBitmap` object. A simple for loop iterates to draw a straight, horizontal line by modifying the x-coordinate with a specified color on the bitmap. After the modifications, the resultant image is saved under a new file name. Here’s how it's executed in code:
+
+```csharp
+// Load the image from a file
+AnyBitmap image = AnyBitmap.FromFile("path/to/your/image.jpg");
+
+// Draw a horizontal line across the image
+for (int x = 0; x < image.Width; x++) {
+    image.SetPixel(x, 10, Color.Red); // Setting pixel color to red at y=10
+}
+
+// Save the modified image
+image.Save("path/to/your/new-image.jpg");
+```
+
+This code snippet effectively demonstrates how to utilize the `SetPixel()` method to alter specific pixels and visualize changes in an image, thereby showcasing the versatility of the `AnyBitmap` class in image manipulation tasks.
