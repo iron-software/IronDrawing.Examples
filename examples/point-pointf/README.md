@@ -1,9 +1,10 @@
 ***Based on <https://ironsoftware.com/examples/point-pointf/>***
 
-IronDrawing has introduced two innovative classes: `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF`. These classes serve to represent a pair of coordinates (double-x and double-y) in a two-dimensional space, making them essential for tasks in image processing. Similar functionalities can be found in other libraries like `System.Drawing`, `SixLabors.ImageSharp`, `SkiaSharp`, and `Microsoft.Maui.Graphics`. The main distinction between the `Point` and `PointF` classes is in the type of data they accept in their constructors.
+IronDrawing has introduced two new classes: `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF`. These classes are crucial for representing coordinates as an ordered pair of x and y values in a two-dimensional space, greatly facilitating image manipulation tasks. Other libraries, such as `System.Drawing`, `SixLabors.ImageSharp`, `SkiaSharp`, and `Microsoft.Maui.Graphics`, offer similar classes, yet the distinction between IronDrawing's `Point` and `PointF` lies in the data types they accommodate in their constructors.
 
-Creating a new instance of `Point` or `PointF` is uncomplicated, involving the initialization of just two values: the X and Y coordinates.
+Creating instances of `Point` or `PointF` is simple and requires setting two main properties:
 
-In the provided code example, `System.Double` values are utilized to assign the x and y coordinates for a `Point` object. Conversely, `System.Single` values (floating-point values) are employed for setting similar properties in the `PointF` object.
+- `Point` objects are created by specifying the coordinates using `System.Double` for both `x` and `y` properties.
+- Conversely, `PointF` objects utilize `System.Single` values (floats) for the same purpose.
 
-Both the `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF` classes offer identical features and functions. While `System.Double`, a 64-bit floating-point type, is typically favored for its enhanced accuracy and ability to handle larger decimals, `System.Single` represents a 32-bit type with reduced precision. Therefore, it is advisable to opt for `IronSoftware.Drawing.Point` over `IronSoftware.Drawing.PointF` for higher precision needs.
+Both `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF` provide identical functionalities and methods. However, using `System.Double` is generally preferred for its enhanced accuracy and ability to handle larger decimal values, being a 64-bit double precision floating-point type. In contrast, `System.Single` is a 32-bit type and offers less precision, making `IronSoftware.Drawing.Point` the more advisable choice for most precise applications.

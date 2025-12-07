@@ -1,17 +1,23 @@
 ***Based on <https://ironsoftware.com/examples/export-anybitmap/>***
 
-The `AnyBitmap` files created using the IronDrawing tool can be converted into various image formats, offering the capability to adjust the quality loss during the conversion. This feature is essential for users who need to find a perfect balance between image quality and file size.
+The `AnyBitmap` file created using the IronDrawing tool can be seamlessly converted to various other image formats, offering users the flexibility to determine the optimal balance between image quality and file size.
 
-To convert an `AnyBitmap` file into another image format, first, load the `AnyBitmap` file, then utilize the `.ExportFile()` method. This method supports three parameters, namely the **name of the exported file**, **image format**, and **extent of image quality loss**. The available formats for the exported image include:
+## Converting `AnyBitmap` to Other Formats
 
-- Bmp
-- Gif
-- Png
-- Jpeg
-- Tiff
-- Webp
-- Wbmp
-- Wmf
-- Icon
+To convert an `AnyBitmap` file to a different image format, start by loading the `AnyBitmap` file and then utilize the `.ExportFile()` method. This method provides three parameters you can adjust:
 
-This versatility in formats ensures that users can meet various specifications and requirements for their image handling tasks.
+1. **Exported file name**
+2. **Target image format**
+3. **Degree of quality reduction**
+
+The resulting image can be saved in any of the listed formats:
+
+- **Bmp**: Bitmap Image File
+- **Gif**: Graphical Interchange Format
+- **Png**: Portable Network Graphics
+- **Jpeg**: Joint Photographic Experts Group
+- **Tiff**: Tagged Image File Format
+- **Webp**: Web Picture
+- **Wbmp**: Wireless Bitmap
+- **Wmf**: Windows Metafile
+- **Icon**: Icon File

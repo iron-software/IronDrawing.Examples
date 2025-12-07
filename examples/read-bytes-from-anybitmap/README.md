@@ -1,11 +1,7 @@
 ***Based on <https://ironsoftware.com/examples/read-bytes-from-anybitmap/>***
 
-IronDrawing provides tools for handling `AnyBitmap` images by working with their byte data. Developers can **extract**, **export**, and **access** the byte data of `AnyBitmap` files.
+## Manipulating `AnyBitmap` Files
 
-You can initiate reading an image file by specifying its path with the method `AnyBitmap.FromFile(@"FILE_PATH")`, assigning the output to an `AnyBitmap` instance. From here, you can work with the byte data in several ways:
+The `IronDrawing` library enables users to handle `AnyBitmap` files at the byte level. This library offers comprehensive methods to **Retrieve**, **Output**, and **Load** bytes from an `AnyBitmap` file.
 
-1. Retrieve the bytes with the `.GetBytes()` method, which pulls the byte array from the `AnyBitmap`.
-2. Export the bytes while modifying the image format and adjusting the level of compression with `.ExportBytes(AnyBitmap.ImageFormat.Format, 10)`. This method allows for flexible data handling to suit various output requirements.
-3. Read the entire byte data directly from the file using `File.ReadAllBytes(@"FILE_PATH")`.
-
-Manipulating images through these methods provides a versatile approach to managing image content directly at the byte level in your applications.
+To initiate, load the desired image file into an `AnyBitmap` instance through the `AnyBitmap.FromFile(@"FILE_PATH")` method. This object provides several functionalities, such as retrieving the byte data with the `.GetBytes()` method. Additionally, it allows for byte exportation where users can adjust the image format and the extent of compression using `.ExportBytes(AnyBitmap.ImageFormat.Format, 10)`. To access a file's entire byte array, `File.ReadAllBytes(@"FILE_PATH")` can be utilized.

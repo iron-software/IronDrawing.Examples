@@ -1,9 +1,7 @@
 ***Based on <https://ironsoftware.com/examples/point-gethashcode/>***
 
-The `Point` and `PointF` classes from IronDrawing also feature the `GetHashCode()` method. This method generates a unique numerical hash code that represents the essence of the object, such as a point in this instance. Hash codes are instrumental in optimizing searches and storage within data structures like dictionaries, hash sets, and hash tables by simplifying object equality checks and hashing operations.
+IronDrawing's `Point` and `PointF` classes feature the `GetHashCode()` method, which calculates a numerical hash code uniquely representing the identity of objects such as a `Point`. These hash codes are essential in the implementation of dictionaries, hash sets, and hash tables as they enhance the efficiency of hashing operations and object equality checks.
 
-To retrieve a hash code for a Point, invoke the `GetHashCode()` on a `Point` or `PointF` instance. This function outputs a `System.Int32` value, which you can either display or store as needed.
+To retrieve the hash code for a `Point`, invoke the `GetHashCode()` method on a `Point` or `PointF` object, which will output a `System.Int32`. This output can then be utilized in further operations or simply displayed.
 
-In the provided example, after initiating a `PointF` object with specific float values for coordinates, the `GetHashCode()` method is applied to this object. The generated hash code is then assigned to a variable and may be printed to the console for verification.
-
-While both `GetHashCode()` and `Equals()` methods facilitate the comparison of two points, `Equals()` directly compares the objects. The `GetHashCode()`, on the other hand, is chiefly utilized for extracting a point's hash code for usage within the program or incorporation into a dictionary or hash tables.
+In addition to the `GetHashCode()` method, the `Equals()` method can be utilized to assess the equivalence of two points. While `Equals()` offers a straightforward way to compare two objects directly for equality, `GetHashCode()` is primarily used to generate a hash code that supports the functioning of various data structures, including dictionaries and hash tables.
