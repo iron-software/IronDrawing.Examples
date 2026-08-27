@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/anybitmap-set-pixel/>***
+> Full guide: [Anybitmap set pixel](https://ironsoftware.com/open-source/csharp/drawing/examples/anybitmap-set-pixel/)
 
 The `SetPixel()` function within the `AnyBitmap` class allows users to alter colors of individual pixels on an image. This capability is particularly useful for tasks such as drawing or for generating simple lines on an image in a designated color.
 

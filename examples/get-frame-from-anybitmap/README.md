@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/get-frame-from-anybitmap/>***
+> Full guide: [Get frame from anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/get-frame-from-anybitmap/)
 
 This functionality allows users to pull or capture individual frames from multi-page GIF or TIFF files and save these frames locally in various image formats. Once saved, these frames can be further edited using IronDrawing or any other tools from Iron Software as needed.
 

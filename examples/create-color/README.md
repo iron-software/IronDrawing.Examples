@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/create-color/>***
+> Full guide: [Create color](https://ironsoftware.com/open-source/csharp/drawing/examples/create-color/)
 
 `IronDrawing` offers users the flexibility to craft unique colors through several methods, including Hexadecimal, RGB values, or by selecting from an enumeration of predefined colors.
 

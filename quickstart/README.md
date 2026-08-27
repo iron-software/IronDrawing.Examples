@@ -1,11 +1,11 @@
 # Replace `System.Drawing.Common` with IronDrawing in .NET Projects
 
-***Based on <https://ironsoftware.com/docs/docs/>***
+> Docs: [IronDrawing documentation](https://ironsoftware.com/open-source/csharp/drawing/docs/)
 
 
 ## Discover IronDrawing: Your Open-Source Solution Across All .NET Platforms
 
-**IronDrawing**, a comprehensive and open-source library crafted by Iron Software, empowers C# developers to seamlessly substitute `System.Drawing.Common` across diverse platforms like Windows, macOS, and Linux in their .NET projects.
+**IronDrawing** is an open-source library from Iron Software that replaces `System.Drawing.Common` in .NET projects on Windows, macOS, and Linux.
 
 Creating class libraries and NuGet packages that handle graphics, images, and fonts across .NET 5, 6, 7, & 8 should be straightforward and efficient.
 
@@ -13,7 +13,7 @@ IronDrawing integrates flawlessly with the evolving .NET graphics standards star
 
 <div class="content-img-align-center">
   <div class="center-image-wrapper">
-    <img src="https://ironsoftware.com/static-assets/drawing/irondrawing-get-started.webp" alt="IronDrawing: Open-source and versatile for all .NET drawing formats" class="img-responsive add-shadow" width="645" height="618">
+    <img src="https://ironsoftware.com/static-assets/drawing/irondrawing-get-started.webp" alt="IronDrawing: open-source drawing types for .NET" class="img-responsive add-shadow" width="645" height="618">
   </div>
 </div>
 
@@ -33,9 +33,9 @@ IronDrawing provides an intermediary solution that facilitates conversion betwee
 
 **IronDrawing guarantees backward compatibility with .NET Framework 4.62 and fully supports all .NET versions up to .NET 8.**
 
-It's designed to convert seamlessly between different graphic class implementations like `System.Drawing`, `Microsoft.Maui`, `SkiaSharp`, and `SixLabors`, streamlining the development process by removing the need to replace these classes throughout libraries.
+It converts between the graphic class implementations in `System.Drawing`, `Microsoft.Maui`, `SkiaSharp`, and `SixLabors`, so those classes do not have to be replaced throughout a library.
 
-For instance, you may continue using `System.Drawing.Bitmap` within IronDrawing via its `AnyBitmap` class, which supports effortless conversions between various graphic formats.
+For instance, `System.Drawing.Bitmap` still works inside IronDrawing through the `AnyBitmap` class, which converts between graphic formats.
 
 ### Why We Offer This for Free
 
@@ -43,7 +43,7 @@ At Iron Software, we are dedicated .NET developers enthusiastic about the platfo
 
 ## Key Features of `IronSoftware.Drawing`
 
-- **`AnyBitmap`**: A versatile Bitmap class with implicit conversions to and from numerous formats:
+- **`AnyBitmap`**: A Bitmap class with implicit conversions to and from many formats:
   - `System.Drawing.Bitmap`, `System.Drawing.Image`
   - `SkiaSharp.SKBitmap`, `SkiaSharp.SKImage`
   - `SixLabors.ImageSharp`
@@ -91,3 +91,4 @@ bitmap.SaveAs("output.jpg");
 
 // Convert the AnyBitmap to a byte array, which can be used for network transmission or database storage
 var imageBytes = bitmap.ExportBytes();
+```
