@@ -1,5 +1,5 @@
 using IronSoftware.Drawing;
-using IronSoftware.System.Drawing;
+using IronSoftware.Drawing;
 namespace IronDrawing.Examples.Overview.Quickstart
 {
     public static class Section4
@@ -14,10 +14,12 @@ namespace IronDrawing.Examples.Overview.Quickstart
             
             try
             {
-                // Attempt to cast System.Drawing.Font to IronSoftware.Drawing.Font
-                // Note: This cast may not be directly possible if the libraries do not support each other;
-                // additional conversion logic might be required.
-                IronSoftware.Drawing.Font ironFont = new IronSoftware.Drawing.Font(drawingFont.FontFamily.Name, drawingFont.Style, drawingFont.Size);
+                // The two FontStyle enums share their member values, so the style
+                // carries across with an explicit cast.
+                IronSoftware.Drawing.Font ironFont = new IronSoftware.Drawing.Font(
+                    drawingFont.FontFamily.Name,
+                    (IronSoftware.Drawing.FontStyle)(int)drawingFont.Style,
+                    drawingFont.Size);
             
                 // Accessing properties of the IronSoftware.Drawing.Font object
                 string familyName = ironFont.FamilyName; // Get the font family name
