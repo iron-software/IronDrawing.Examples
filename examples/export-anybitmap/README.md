@@ -1,6 +1,6 @@
-***Based on <https://ironsoftware.com/examples/export-anybitmap/>***
+> Full guide: [Export anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/export-anybitmap/)
 
-The `AnyBitmap` file created using the IronDrawing tool can be seamlessly converted to various other image formats, offering users the flexibility to determine the optimal balance between image quality and file size.
+The `AnyBitmap` file created using the IronDrawing tool can be converted to various other image formats, offering users the flexibility to determine the optimal balance between image quality and file size.
 
 ## Converting `AnyBitmap` to Other Formats
 

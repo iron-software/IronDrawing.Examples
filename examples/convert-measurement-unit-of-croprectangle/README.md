@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/convert-measurement-unit-of-croprectangle/>***
+> Full guide: [Convert measurement unit of croprectangle](https://ironsoftware.com/open-source/csharp/drawing/examples/convert-measurement-unit-of-croprectangle/)
 
 IronDrawing offers a functionality for those looking to alternate the measurement units in `Rectangle` or `RectangleF` between pixels (px) and millimeters (mm), or the other way around. By default, the units in `Rectangle` and `RectangleF` are in pixels (px).
 

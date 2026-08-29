@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/generate-anybitmap/>***
+> Full guide: [Generate anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/generate-anybitmap/)
 
 To utilize the IronDrawing toolkit for managing image files, first, it's necessary to create `AnyBitmap` type files. Here are the different techniques for loading image files and creating `AnyBitmap` files:
 

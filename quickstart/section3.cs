@@ -1,5 +1,5 @@
 using System.Drawing;
-using IronSoftware.System.Drawing;
+using IronSoftware.Drawing;
 namespace IronDrawing.Examples.Overview.Quickstart
 {
     public static class Section3

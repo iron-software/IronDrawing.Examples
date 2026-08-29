@@ -1,5 +1,6 @@
+using IronSoftware.Drawing;
 using System;
-using IronSoftware.System.Drawing;
+using IronSoftware.Drawing;
 namespace IronDrawing.Examples.Overview.Quickstart
 {
     public static class Section2
@@ -11,10 +12,10 @@ namespace IronDrawing.Examples.Overview.Quickstart
             // System.Drawing.Color and IronSoftware.Drawing.Color.
             
             // Create a new Color object from a hex string.
-            Color fromHex = Color.FromHex("#191919");
+            Color fromHex = new Color("#191919");
             
             // Create a new Color object from RGB values.
-            Color fromRgb = Color.FromRgb(255, 255, 0);
+            Color fromRgb = new Color(255, 255, 0);
             
             // Create a new Color object using an enumeration.
             Color fromEnum = Color.Crimson;
@@ -23,7 +24,7 @@ namespace IronDrawing.Examples.Overview.Quickstart
             System.Drawing.Color drawingColor = System.Drawing.Color.Red;
             
             // Convert System.Drawing.Color to IronSoftware.Drawing.Color.
-            IronSoftware.Drawing.Color ironColor = Color.FromSystemColor(drawingColor);
+            IronSoftware.Drawing.Color ironColor = drawingColor; // implicit conversion
             
             // Access the alpha, red, green, and blue components of the IronSoftware.Drawing.Color.
             byte alpha = ironColor.A;
