@@ -1,68 +1,65 @@
-[![NuGet](https://img.shields.io/nuget/v/IronSoftware.System.Drawing?color=informational&label=latest&logo=nuget)](https://www.nuget.org/packages/IronSoftware.System.Drawing/)[![Installs](https://img.shields.io/nuget/dt/IronSoftware.System.Drawing?color=informational&label=installs&logo=nuget)](https://www.nuget.org/packages/IronSoftware.System.Drawing/)[![GitHub Latest Commit](https://img.shields.io/github/last-commit/iron-software/IronSoftware.Drawing.Common?color=informational&logo=github)](https://github.com/iron-software/IronSoftware.Drawing.Common)[![GitHub Contributors](https://img.shields.io/github/contributors/iron-software/IronSoftware.Drawing.Common?color=informational&logo=github)](https://github.com/iron-software/IronSoftware.Drawing.Common)[![GitHub Issue Shield](https://img.shields.io/github/issues/iron-software/IronSoftware.System.Drawing?logo=GitHub&style=flat-square)](https://github.com/iron-software/IronSoftware.System.Drawing/issues)
+# IronDrawing.Examples
 
-## Introduction to IronSoftware.Drawing - a .NET Library for Image, Color, Rectangle, Font, Point, and Size Management
+Runnable C# examples for [IronDrawing](https://ironsoftware.com/open-source/csharp/drawing/?utm_source=github), a free and open-source .NET graphics library that replaces `System.Drawing.Common` with types that convert implicitly to and from SkiaSharp, ImageSharp, MAUI Graphics, and `System.Drawing` itself.
 
-**IronSoftware.Drawing** is a freely available, open-source library offered by Iron Software, specifically designed as a replacement for `System.Drawing.Common` in .NET applications.
+## Install
 
-Those interested in contributing to the project may visit and collaborate directly through its public repository on [GitHub](https://github.com/iron-software/IronSoftware.System.Drawing/).
+```bash
+dotnet add package IronSoftware.System.Drawing
+```
 
-### Supported Environments Include:
+## Quickstart
 
-  * .NET Versions: .NET 8, .NET 7, .NET 6, .NET 5, .NET Core, Standard, and Framework
-  * Platforms: Windows, macOS, Linux, Docker, Azure, and AWS
+```csharp
+using IronSoftware.Drawing;
 
-### Key Features of IronSoftware.Drawing:
+// Load an image from disk into an AnyBitmap
+var bitmap = AnyBitmap.FromFile("input.png");
 
- * **AnyBitmap**: A Bitmap class compatible with multiple frameworks. Implicit conversions between `IronSoftware.Drawing.AnyBitmap` and:
-      * `System.Drawing.Bitmap`
-      * `System.Drawing.Image`
-      * `SkiaSharp.SKBitmap`
-      * `SkiaSharp.SKImage`
-      * `SixLabors.ImageSharp`
-      * `Microsoft.Maui.Graphics.Platform.PlatformImage`
-  * **Color**: A comprehensive Color class with support for implicit conversions between `IronSoftware.Drawing.Color` and:
-      * `System.Drawing.Color`
-      * `SkiaSharp.SKColor`
-      * `SixLabors.ImageSharp.Color`
-      * `SixLabors.ImageSharp.PixelFormats`
-  * **Rectangle** and **RectangleF**: A compatible Rectangle class allowing implicit conversions between `IronSoftware.Drawing.Rectangle`, `IronSoftware.Drawing.RectangleF`, and:
-      * `System.Drawing.Rectangle`
-      * `System.Drawing.RectangleF`
-      * `SkiaSharp.SKRect`
-      * `SkiaSharp.SKRectI`
-      * `SixLabors.ImageSharp.Rectangle`
-      * `SixLabors.ImageSharp.RectangleF`
-  * **Size** and **SizeF**: A compatible Size class supporting implicit conversions between `IronSoftware.Drawing.Size`, `IronSoftware.Drawing.SizeF`, and:
-      * `System.Drawing.Size`
-      * `System.Drawing.SizeF`
-      * `SkiaSharp.SKSize`
-      * `SkiaSharp.SKSizeI`
-      * `SixLabors.ImageSharp.Size`
-      * `SixLabors.ImageSharp.SizeF`
-      * `Microsoft.Maui.Graphics.Size`
-      * `Microsoft.Maui.Graphics.SizeF`
-  * **Font**: A universally compatible Font class with implicit conversions between `IronSoftware.Drawing.Font` and:
-      * `System.Drawing.Font`
-      * `SkiaSharp.SKFont`
-      * `SixLabors.Fonts.Font`
-      * `IronPdf.Font.FontTypes`
-  * **Point** and **PointF**: Universally compatible Point classes supporting conversions between `IronSoftware.Drawing.Point`, `IronSoftware.Drawing.PointF`, and:
-      * `System.Drawing.Point`
-      * `SixLabors.ImageSharp.Point`
-      * `SixLabors.ImageSharp.PointF`
-      * `Microsoft.Maui.Graphics.Point`
-      * `Microsoft.Maui.Graphics.PointF`
-      * `SkiaSharp.SKPoint`
-      * `SkiaSharp.SKPointI`
+// Save it back out in a different format
+bitmap.SaveAs("result.jpg");
 
-#### Code Examples
+// Export to a byte array or a stream for network or database use
+byte[] bytes = bitmap.ExportBytes();
 
-Explore a complete array of code samples on our [Get Started](https://github.com/iron-software/IronSoftware.System.Drawing#using-ironsoftwaredrawing) section on GitHub.
+using var stream = new MemoryStream();
+bitmap.ExportStream(stream, AnyBitmap.ImageFormat.Jpeg, 100);
+```
 
-### Available Support
+`AnyBitmap` converts implicitly to and from `System.Drawing.Bitmap`, `SkiaSharp.SKBitmap`, `SixLabors.ImageSharp.Image`, and `Microsoft.Maui.Graphics.Platform.PlatformImage`, so it can sit between two libraries that would otherwise not agree on an image type. `Color`, `Rectangle`, `Size`, `Point`, and `Font` behave the same way.
 
-To address issues regarding IronSoftware.System.Drawing, please report them on our [GitHub Issues Page](https://github.com/iron-software/IronSoftware.System.Drawing/issues).
+IronDrawing is free and open source — no license key is required.
 
-For further information about Iron Software, visit our homepage at [https://ironsoftware.com/](https://ironsoftware.com/?utm_source=github).
+## What's in this repo
 
-For general support or technical queries, contact us via email at: [support@ironsoftware.com](mailto:support@ironsoftware.com).
+Each folder contains a self-contained .NET project you can open and run:
+
+- `examples/` — focused snippets demonstrating individual features
+- `quickstart/` — an end-to-end project scaffold
+
+## Common tasks covered
+
+- Loading, cloning, and saving `AnyBitmap` images across formats
+- Casting between `AnyBitmap` and `System.Drawing`, SkiaSharp, ImageSharp, and MAUI image types
+- Exporting images to `byte[]` and `MemoryStream`, and to a string with `ToString()`
+- Reading and setting individual pixels
+- Multi-frame images: creating multi-page TIFF and GIF, counting frames, extracting a single frame
+- Color creation, 32-bit ARGB conversion, and color-depth inspection
+- `CropRectangle` construction, casting, and measurement-unit conversion
+- `Point`, `PointF`, `Rectangle`, `RectangleF`, `Size`, and `SizeF` arithmetic, casting, and equality
+
+## Platform support
+
+.NET Standard 2.0 and .NET 6 — which covers .NET 8, 7, 6, 5, .NET Core, and .NET Framework 4.6.1+. Windows, macOS, Linux, Docker, Azure, and AWS. See the [documentation](https://ironsoftware.com/open-source/csharp/drawing/docs/?utm_source=github) for environment-specific notes.
+
+## Documentation and support
+
+- Full documentation: [ironsoftware.com/open-source/csharp/drawing/docs](https://ironsoftware.com/open-source/csharp/drawing/docs/?utm_source=github)
+- API reference: [ironsoftware.com/open-source/csharp/drawing/object-reference/api](https://ironsoftware.com/open-source/csharp/drawing/object-reference/api/?utm_source=github)
+- Library source and issues: [github.com/iron-software/IronSoftware.System.Drawing](https://github.com/iron-software/IronSoftware.System.Drawing)
+- Issues with these examples: file directly on this repository
+- Product support: [support@ironsoftware.com](mailto:support@ironsoftware.com)
+
+## About
+
+This repository is maintained by [Iron Software](https://ironsoftware.com/?utm_source=github). IronDrawing is free and open source; the rest of the Iron Suite is commercial.
