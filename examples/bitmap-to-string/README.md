@@ -1,4 +1,4 @@
-> Full guide: [Bitmap to string](https://ironsoftware.com/open-source/csharp/drawing/examples/bitmap-to-string/)
+> Full guide: [Bitmap to string](https://ironsoftware.com/open-source/csharp/drawing/examples/bitmap-to-string/?utm_source=github)
 
 IronDrawing includes the capability to convert `AnyBitmap` files into a distinctive string of characters that represents the file based on its attributes. Each alteration in the `AnyBitmap` file results in a different string, making it easy to detect differences or similarities just by comparing these strings.
 

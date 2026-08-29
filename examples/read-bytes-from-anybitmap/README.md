@@ -1,4 +1,4 @@
-> Full guide: [Read bytes from anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/read-bytes-from-anybitmap/)
+> Full guide: [Read bytes from anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/read-bytes-from-anybitmap/?utm_source=github)
 
 ## Manipulating `AnyBitmap` Files
 

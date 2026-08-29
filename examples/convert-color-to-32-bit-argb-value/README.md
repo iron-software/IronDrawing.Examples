@@ -1,4 +1,4 @@
-> Full guide: [Convert color to 32 bit argb value](https://ironsoftware.com/open-source/csharp/drawing/examples/convert-color-to-32-bit-argb-value/)
+> Full guide: [Convert color to 32 bit argb value](https://ironsoftware.com/open-source/csharp/drawing/examples/convert-color-to-32-bit-argb-value/?utm_source=github)
 
 `IronDrawing` offers a useful functionality for converting colors into 32-bit ARGB values, which can be immensely helpful for developers who need these values for programming purposes or merely wish to determine the specific value of a color.
 

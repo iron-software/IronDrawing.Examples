@@ -1,4 +1,4 @@
-> Full guide: [Get color depth](https://ironsoftware.com/open-source/csharp/drawing/examples/get-color-depth/)
+> Full guide: [Get color depth](https://ironsoftware.com/open-source/csharp/drawing/examples/get-color-depth/?utm_source=github)
 
 Color depth is quantified in bits per pixel (bpp), which describes the color information of the components. This measure might refer to the bits allocated for a single pixel's color or how many bits are designated for each color component in a pixel. Furthermore, bpp is useful for assessing image quality, with a higher bpp usually suggesting better image definition.
 

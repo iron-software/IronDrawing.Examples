@@ -63,6 +63,6 @@ Explore a complete array of code samples on our [Get Started](https://github.com
 
 To address issues regarding IronSoftware.System.Drawing, please report them on our [GitHub Issues Page](https://github.com/iron-software/IronSoftware.System.Drawing/issues).
 
-For further information about Iron Software, visit our homepage at [https://ironsoftware.com/](https://ironsoftware.com/).
+For further information about Iron Software, visit our homepage at [https://ironsoftware.com/](https://ironsoftware.com/?utm_source=github).
 
 For general support or technical queries, contact us via email at: [support@ironsoftware.com](mailto:support@ironsoftware.com).
