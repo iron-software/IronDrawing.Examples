@@ -1,4 +1,4 @@
-> Full guide: [Point offset](https://ironsoftware.com/open-source/csharp/drawing/examples/point-offset/)
+> Full guide: [Point offset](https://ironsoftware.com/open-source/csharp/drawing/examples/point-offset/?utm_source=github)
 
 The following guide will help you understand how to modify coordinates within the `PointF` or `Point` class using the `Offset()` method.
 

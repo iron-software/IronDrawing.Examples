@@ -1,4 +1,4 @@
-> Full guide: [Create multipage TIFF and GIF](https://ironsoftware.com/open-source/csharp/drawing/examples/create-multipage-tiff-and-gif/)
+> Full guide: [Create multipage TIFF and GIF](https://ironsoftware.com/open-source/csharp/drawing/examples/create-multipage-tiff-and-gif/?utm_source=github)
 
 IronDrawing enables users to merge `AnyBitmap` files into multipage TIFF or GIF files, offering the flexibility to set unique dimensions for each frame within these files.
 

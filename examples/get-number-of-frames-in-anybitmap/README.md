@@ -1,4 +1,4 @@
-> Full guide: [Get number of frames in anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/get-number-of-frames-in-anybitmap/)
+> Full guide: [Get number of frames in anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/get-number-of-frames-in-anybitmap/?utm_source=github)
 
 This functionality allows users to determine the number of frames in multipage GIF or TIFF files.
 

@@ -1,4 +1,4 @@
-> Full guide: [Cast to anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/cast-to-anybitmap/)
+> Full guide: [Cast to anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/cast-to-anybitmap/?utm_source=github)
 
 To utilize and modify images within IronDrawing, it's essential that these images are transformed into an `AnyBitmap` format. IronDrawing facilitates the conversion of image files from alternative frameworks into `AnyBitmap` entities. Here, we outline how to convert images from various platforms to `AnyBitmap`.
 

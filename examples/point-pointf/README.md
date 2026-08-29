@@ -1,4 +1,4 @@
-> Full guide: [Point pointf](https://ironsoftware.com/open-source/csharp/drawing/examples/point-pointf/)
+> Full guide: [Point pointf](https://ironsoftware.com/open-source/csharp/drawing/examples/point-pointf/?utm_source=github)
 
 IronDrawing has introduced two new classes: `IronSoftware.Drawing.Point` and `IronSoftware.Drawing.PointF`. These classes are crucial for representing coordinates as an ordered pair of x and y values in a two-dimensional space, greatly facilitating image manipulation tasks. Other libraries, such as `System.Drawing`, `SixLabors.ImageSharp`, `SkiaSharp`, and `Microsoft.Maui.Graphics`, offer similar classes, yet the distinction between IronDrawing's `Point` and `PointF` lies in the data types they accommodate in their constructors.
 

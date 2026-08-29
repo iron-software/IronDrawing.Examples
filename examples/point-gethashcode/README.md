@@ -1,4 +1,4 @@
-> Full guide: [Point gethashcode](https://ironsoftware.com/open-source/csharp/drawing/examples/point-gethashcode/)
+> Full guide: [Point gethashcode](https://ironsoftware.com/open-source/csharp/drawing/examples/point-gethashcode/?utm_source=github)
 
 IronDrawing's `Point` and `PointF` classes feature the `GetHashCode()` method, which calculates a numerical hash code uniquely representing the identity of objects such as a `Point`. These hash codes are essential in the implementation of dictionaries, hash sets, and hash tables as they enhance the efficiency of hashing operations and object equality checks.
 

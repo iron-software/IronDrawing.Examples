@@ -1,6 +1,6 @@
 # Replace `System.Drawing.Common` with IronDrawing in .NET Projects
 
-> Docs: [IronDrawing documentation](https://ironsoftware.com/open-source/csharp/drawing/docs/)
+> Docs: [IronDrawing documentation](https://ironsoftware.com/open-source/csharp/drawing/docs/?utm_source=github)
 
 
 ## Discover IronDrawing: Your Open-Source Solution Across All .NET Platforms

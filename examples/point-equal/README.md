@@ -1,4 +1,4 @@
-> Full guide: [Point equal](https://ironsoftware.com/open-source/csharp/drawing/examples/point-equal/)
+> Full guide: [Point equal](https://ironsoftware.com/open-source/csharp/drawing/examples/point-equal/?utm_source=github)
 
 Among the features provided by the `Point` and `PointF` classes is the `Equals()` method. This function compares two points by evaluating their x and y coordinates, returning a boolean result to indicate whether the points are identical.
 

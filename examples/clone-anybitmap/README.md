@@ -1,4 +1,4 @@
-> Full guide: [Clone anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/clone-anybitmap/)
+> Full guide: [Clone anybitmap](https://ironsoftware.com/open-source/csharp/drawing/examples/clone-anybitmap/?utm_source=github)
 
 IronDrawing offers a handy capability for duplicating an `AnyBitmap`. This functionality provides a straightforward way to create a precise replica of an `AnyBitmap` object and save it independently, preserving the integrity of the original file. Additionally, users can customize their copy by selecting a specific area of the file they wish to clone. This is done by deploying the `CropRectangle` feature, which allows for saving only the desired portion of the file without altering the original.
 
