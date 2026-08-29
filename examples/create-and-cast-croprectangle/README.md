@@ -1,6 +1,6 @@
 > Full guide: [Create and cast croprectangle](https://ironsoftware.com/open-source/csharp/drawing/examples/create-and-cast-croprectangle/)
 
-`Rectangle` and `RectangleF` are integral components of IronDrawing, allowing you to crop images effectively. These can be seamlessly integrated by converting instances from `System.Drawing.Rectangle` or `System.Drawing.RectangleF` to `IronSoftware.Drawing.Rectangle` or `IronSoftware.Drawing.RectangleF` through the use of the `Cast` method.
+`Rectangle` and `RectangleF` are integral components of IronDrawing, allowing you to crop images effectively. These can be integrated by converting instances from `System.Drawing.Rectangle` or `System.Drawing.RectangleF` to `IronSoftware.Drawing.Rectangle` or `IronSoftware.Drawing.RectangleF` through the use of the `Cast` method.
 
 ## Utilizing `Rectangle` & `RectangleF`
 
@@ -30,4 +30,4 @@ IronSoftware.Drawing.Rectangle ironRect = systemRect;
 IronSoftware.Drawing.RectangleF ironRectF = systemRectF;
 ```
 
-This streamlined process allows for the easy integration of these shapes within the features of IronDrawing.
+This simplified process allows for the easy integration of these shapes within the features of IronDrawing.

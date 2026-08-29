@@ -1,6 +1,6 @@
 > Full guide: [Point casting](https://ironsoftware.com/open-source/csharp/drawing/examples/point-casting/)
 
-`Point` and `PointF` classes are integral components of the `IronSoftware.Drawing` namespace, developed to align with similar functionalities seen in other graphics libraries like `System.Drawing`, `SixLabors.ImageSharp`, `Maui.Graphics`, and `SkiaSharp`. This compatibility feature of `IronSoftware.Drawing` facilitates implicit casting between `Point` and `PointF` objects, allowing seamless interoperability and manipulation within a user's program.
+`Point` and `PointF` classes are integral components of the `IronSoftware.Drawing` namespace, developed to align with similar functionalities seen in other graphics libraries like `System.Drawing`, `SixLabors.ImageSharp`, `Maui.Graphics`, and `SkiaSharp`. This compatibility feature of `IronSoftware.Drawing` facilitates implicit casting between `Point` and `PointF` objects, allowing interoperability and manipulation within a user's program.
 
 The following code example illustrates how to implement implicit casting. In one instance, a `IronSoftware.Drawing.Point` is converted to a `Point` from a different library, while another segment of the code demonstrates reversing this process. For implicit casting, one simply needs to assign an object of `IronSoftware.Drawing.Point` to a variable from another library.
 

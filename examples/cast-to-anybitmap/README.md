@@ -26,4 +26,4 @@ Images managed by `SixLabors` can be cast to `AnyBitmap` too. Load the image dir
 
 Converting a MAUI image into an `AnyBitmap` requires a few steps and is compatible with all environments except **NET4.7.2**. Begin by reading the image file into a byte array with `File.ReadAllBytes(path)`, then transform these bytes into an image using `Microsoft.Maui.Graphics.Platform.PlatformImage.FromStream(new MemoryStream(byteArray))`. This image can then be cast and stored as an `AnyBitmap`. 
 
-Following these methods, developers can effectively manage images across different platforms within IronDrawing, promoting versatility and efficiency in image processing tasks.
+Following these methods, one image type can be handed to any of these libraries without a conversion step of your own.

@@ -13,7 +13,7 @@ Those interested in contributing to the project may visit and collaborate direct
 
 ### Key Features of IronSoftware.Drawing:
 
-  * **AnyBitmap**: A versatile Bitmap class compatible with multiple frameworks. Implicit conversions between `IronSoftware.Drawing.AnyBitmap` and:
+ * **AnyBitmap**: A Bitmap class compatible with multiple frameworks. Implicit conversions between `IronSoftware.Drawing.AnyBitmap` and:
       * `System.Drawing.Bitmap`
       * `System.Drawing.Image`
       * `SkiaSharp.SKBitmap`
